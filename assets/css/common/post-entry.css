@@ -40,13 +40,21 @@
     margin-bottom: var(--gap);
     padding: var(--gap);
     background: var(--entry);
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
+    border-radius: var(--radius / 2);/*post-entry的圆角*/
     transition: transform 0.1s;
     border: 1px solid var(--border);
+    transition: transform 0.05s, box-shadow 0.1s; /* 添加了 box-shadow 的过渡效果 */
+}
+
+/*add weew12*/
+.post-entry:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加透明的 box-shadow 效果 */
+    transition: box-shadow 0.1s; /* 添加过渡动画的属性和时间 */
 }
 
 .post-entry:active {
-    transform: scale(0.96);
+    transform: scale(0.99);/*点击post-entry项目后的放缩效果*/
 }
 
 .tag-entry .entry-cover {
