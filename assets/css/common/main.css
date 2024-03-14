@@ -16,10 +16,12 @@
 
 .pagination a {
     color: var(--theme);
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 15px;/*下一页跳转按钮的文字大小*/
     line-height: 36px;
     background: var(--primary);
-    border-radius: calc(36px / 2);
+    /* border-radius: calc(36px / 2); */
+    border-radius: calc(36px / 3);/*下一页跳转按钮的圆角大小*/
     padding: 0 16px;
 }
 
