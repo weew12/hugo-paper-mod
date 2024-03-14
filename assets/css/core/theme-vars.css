@@ -3,7 +3,8 @@
     --content-gap: 20px;
     /* --nav-width: 1024px;  */
     --nav-width: 1536px; /*页面顶部导航栏宽度最大值*/
-    --main-width: 720px;
+    /* --main-width: 720px; */
+    --main-width: 1280px;/*页面主题内容的宽度*/
     --header-height: 60px;/*页面顶部导航栏高度*/
     --footer-height: 70px;
     --radius: 8px;
