@@ -1,7 +1,9 @@
 .footer,
 .top-link {
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 18px;/*footer 底部文字大小*/
     color: var(--secondary);
+    /* border: 1px solid red; */
 }
 
 .footer {
