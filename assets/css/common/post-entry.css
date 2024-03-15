@@ -44,8 +44,8 @@
     padding: var(--gap);
     background: var(--entry);
     /* border-radius: var(--radius); */
-    border-radius: var(--radius / 2);/*post-entry的圆角*/
-    transition: transform 0.1s;
+    border-radius: calc(var(--radius) / 2);/*post-entry的圆角*/
+    /* transition: transform 0.1s; */
     border: 1px solid var(--border);
     transition: transform 0.05s, box-shadow 0.1s; /* 添加了 box-shadow 的过渡效果 */
 }
