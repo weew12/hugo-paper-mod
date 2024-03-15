@@ -68,6 +68,12 @@ body:not(.dark) #sun {
     margin-inline-start: var(--gap);
 }
 
+<<<<<<< HEAD
+/* 首页header 右侧菜单文字 */
+#menu a {
+    /* font-size: 16px; */
+    font-size: 20px;
+=======
 /*顶部菜单 右侧文字*/
 #menu a {
     /* font-size: 16px; */
@@ -79,6 +85,7 @@ body:not(.dark) #sun {
 /*add hover*/
 #menu a:hover {
     border-bottom: 2px solid currentColor;
+>>>>>>> 293ae4bd83fe2488932c8f8d263e49d9f2a4b6c2
 }
 
 #menu .active {
