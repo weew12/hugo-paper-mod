@@ -41,4 +41,5 @@
 .archive-meta {
     color: var(--secondary);
     font-size: 14px;
+    font-weight: 500;/*add weew12*/
 }
