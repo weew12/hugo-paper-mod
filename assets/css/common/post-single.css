@@ -257,8 +257,10 @@
     margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
     background: var(--code-bg);
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
+    border-radius: calc(var(--radius) / 2.5);
     padding: 0.4em;
+    padding-top: 0.6em;/*add weew12*/
 }
 
 .dark .toc {
