@@ -315,7 +315,8 @@
 .post-tags a,
 .share-buttons,
 .paginav {
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
+    border-radius: calc(var(--radius) / 2.5);
     background: var(--code-bg);
     border: 1px solid var(--border);
 }
@@ -372,7 +373,7 @@ h6:hover .anchor {
 .paginav a {
     padding-inline-start: 14px;
     padding-inline-end: 14px;
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
 }
 
 .paginav .title {
