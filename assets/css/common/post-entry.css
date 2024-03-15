@@ -72,7 +72,8 @@
 .entry-content {
     margin: 8px 0;
     color: var(--secondary);
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 18px;
     line-height: 1.6;
     overflow: hidden;
     display: -webkit-box;
@@ -82,7 +83,14 @@
 
 .entry-footer {
     color: var(--secondary);
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 15px;
+    /*add weew12*/
+    font-weight: 500;
+}
+/*add weew12*/
+.entry-footer span {
+    font-weight: bold;
 }
 
 .entry-link {
@@ -111,6 +119,7 @@
 }
 
 .entry-cover {
+    /* border: 1px solid red; */
     font-size: 14px;
     margin-bottom: var(--gap);
     text-align: center;
@@ -120,7 +129,9 @@
     border-radius: var(--radius);
     pointer-events: none;
     width: 100%;
+    /* width: 60%; */
     height: auto;
+    margin: auto;
 }
 
 .entry-cover a {
