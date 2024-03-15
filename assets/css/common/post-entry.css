@@ -91,7 +91,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    border: 1px solid rgba(249, 246, 246, 0.125);/*add border*/
+    border: 1px solid rgba(249, 246, 246, 0.05);/*add border*/
     transition: border 0.1s; /* 添加过渡效果 */
 }
 
