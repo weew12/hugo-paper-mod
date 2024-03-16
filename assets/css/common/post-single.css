@@ -17,7 +17,7 @@
 .breadcrumbs {
     color: var(--secondary);
     /* font-size: 14px; */
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -30,7 +30,7 @@
 }
 
 .breadcrumbs a {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .post-content {
@@ -192,8 +192,12 @@
 
 .post-content code {
     margin: auto 4px;
+    /* padding: 4px 6px; */
     padding: 4px 6px;
-    font-size: 0.78em;
+    /*add weew12*/
+    font-weight: 550;
+    /* font-size: 0.78em; */
+    font-size: 1em;
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;
@@ -205,7 +209,8 @@
     padding: 10px;
     color: rgb(213, 213, 214);
     background: var(--code-block-bg) !important;
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
+    border-radius: calc(var(--radius) / 2);
     overflow-x: auto;
     word-break: break-all;
 }
