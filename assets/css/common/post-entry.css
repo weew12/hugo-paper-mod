@@ -41,18 +41,21 @@
 .post-entry {
     position: relative;
     margin-bottom: var(--gap);
-    padding: var(--gap);
+    /* padding: var(--gap); */
+    /* padding: calc(var(--gap) / 2.5); */
     background: var(--entry);
     /* border-radius: var(--radius); */
     border-radius: calc(var(--radius) / 2);/*post-entry的圆角*/
     /* transition: transform 0.1s; */
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
+    /* border: 2px solid red; */
     transition: transform 0.05s, box-shadow 0.1s; /* 添加了 box-shadow 的过渡效果 */
+
 }
 
 /*add weew12*/
 .post-entry:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加透明的 box-shadow 效果 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /*添加透明的 box-shadow 效果*/
     transition: box-shadow 0.1s; /* 添加过渡动画的属性和时间 */
 }
 
@@ -67,10 +70,12 @@
 .entry-header h2 {
     font-size: 24px;
     line-height: 1.3;
+    margin: 10px;
 }
 
 .entry-content {
-    margin: 8px 0;
+    /* margin: 8px 0; */
+    margin: 10px 12px;
     color: var(--secondary);
     /* font-size: 14px; */
     font-size: 18px;
@@ -87,6 +92,8 @@
     font-size: 15px;
     /*add weew12*/
     font-weight: 500;
+    /*add weew12*/
+    margin: 10px 12px;
 }
 /*add weew12*/
 .entry-footer span {
@@ -100,13 +107,18 @@
     top: 0;
     bottom: 0;
     border: 1px solid rgba(249, 246, 246, 0.05);/*add border*/
-    transition: border 0.1s; /* 添加过渡效果 */
+    /* 添加过渡效果 */
+    /* transition: border 0.1s;  */
+    transition: box-shadow 0.1s; /* 添加过渡动画的属性和时间 */
 }
 
 /*add weew12*/
 .entry-link:hover {
     /* border: none; */
-    border: 1px solid rgba(255, 255, 255, 0.3);/*add border*/
+    /*add border*/
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /*添加透明的 box-shadow 效果*/
+    
 }
 
 .entry-hint {
@@ -121,15 +133,15 @@
 .entry-cover {
     /* border: 1px solid red; */
     font-size: 14px;
-    margin-bottom: var(--gap);
+    /* margin-bottom: var(--gap); */
     text-align: center;
 }
 
 .entry-cover img {
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
+    border-radius: calc(var(--radius) / 2);
     pointer-events: none;
     width: 100%;
-    /* width: 60%; */
     height: auto;
     margin: auto;
 }
@@ -138,3 +150,41 @@
     color: var(--secondary);
     box-shadow: 0 1px 0 var(--primary);
 }
+
+/***************      weew12 修改布局添加        ***************/
+.post-entry-inner-wrapper {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    border-radius: calc(var(--radius) / 2);
+}
+
+.post-entry-inner-wrapper-coverimg {
+    flex: 3;
+    /* border: 2px dashed black; */
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+.post-entry-inner-wrapper-allcontent {
+    /* border: 2px dashed black; */
+    flex: 5;
+    align-self: center;
+    padding: 10px;
+}
+
+/* 媒体查询，当屏幕宽度小于768px时，切换到上下布局 */
+@media (max-width: 786px) {
+    .post-entry-inner-wrapper {
+        flex-direction: column; /* 在小屏幕上保持这个方向 */
+    }
+    .post-entry-inner-wrapper-coverimg {
+        width: 100%;
+    }
+    .post-entry-inner-wrapper-allcontent {
+        width: 100%;
+    }
+}
+/***************      weew12 修改布局添加        ***************/
