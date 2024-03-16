@@ -1,6 +1,11 @@
 .archive-posts {
     width: 100%;
     font-size: 16px;
+    padding-left: 5px;
+    /* border: 1px solid red; */
+    border-left: 5px solid var(--border);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .archive-year {
@@ -34,7 +39,8 @@
 
 .archive-entry-title {
     margin: 5px 0;
-    font-weight: 400;
+    /* font-weight: 400; */
+    font-weight: 650;
 }
 
 .archive-count,
@@ -42,4 +48,9 @@
     color: var(--secondary);
     font-size: 14px;
     font-weight: 500;/*add weew12*/
+}
+
+/*weew12 add*/
+.archive-count {
+    font-size: .8em;
 }
