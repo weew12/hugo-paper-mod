@@ -64,7 +64,7 @@
 }
 
 .tag-entry .entry-cover {
-    display: none;
+    /* display: none; */
 }
 
 .entry-header h2 {
@@ -161,11 +161,11 @@
 
 .post-entry-inner-wrapper-coverimg {
     flex: 3;
-    /* border: 2px dashed black; */
+    border: 2px dashed black;
     justify-content: center;
     align-items: center;
     align-self: center;
-
+    height: 100%;
 }
 
 .post-entry-inner-wrapper-allcontent {
