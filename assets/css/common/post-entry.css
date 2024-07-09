@@ -4,9 +4,10 @@
     flex-direction: column;
     justify-content: center;
     /* min-height: 320px; */
-    min-height: 300px;
+    /* min-height: 300px; */
     /* margin: var(--gap) 0 calc(var(--gap)) 0; */
-    margin: 0 0 calc(var(--gap)) 0;
+    /* margin: 0 0 calc(var(--gap)) 0; */ /*weew12 底部太宽了*/
+    margin: 0 0 0 0;
 }
 
 .first-entry .entry-header {
